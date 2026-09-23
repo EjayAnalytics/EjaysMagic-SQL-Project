@@ -142,13 +142,104 @@
 --(18, 10, 2, null, 1, 80.00)    -- Crochet Doll
 
 
+--SELECT *
+--FROM Products
 
+--SELECT ProductName, Price
+--FROM Products
 
+--SELECT ProductName, Price
+--FROM Products
+--WHERE Price = 40
 
+--SELECT ProductName, Price
+--FROM Products
+--ORDER BY Price asc
 
+--SELECT ProductName, Price
+--FROM Products
+--WHERE Price >= 25
+--ORDER BY Price asc 
 
+--SELECT SUM(Price) AS TotalProductValue
+--FROM Products
 
+--SELECT COUNT(*) AS TotalProducts
+--FROM Products
 
+--SELECT AVG(Price) AS AveragePrice
+--FROM Products
 
+--SELECT  ProductID, COUNT(*) AS TimesOrdered
+--FROM OrdersDetails
+--GROUP BY ProductID
 
+--SELECT ProductID, SUM(Quantity) AS TotalQuantitySold
+--FROM OrdersDetails
+--GROUP BY ProductID
+
+--SELECT Products.ProductName,OrdersDetails.Quantity
+--FROM OrdersDetails
+--JOIN Products
+--ON OrdersDetails.ProductID = Products.ProductID
+
+--SELECT Products.ProductName,
+--SUM(OrdersDetails.Quantity) AS TotalQuantitySold
+--FROM OrdersDetails
+--JOIN Products
+--ON OrdersDetails.ProductID = Products.ProductID
+--GROUP BY Products.ProductName
+
+--SELECT Products.ProductName,
+--SUM(OrdersDetails.Quantity) AS TotalQuantitySold
+--FROM OrdersDetails
+--JOIN Products
+--ON OrdersDetails.ProductID = Products.ProductID
+--GROUP BY Products.ProductName
+--ORDER BY TotalQuantitySold Desc
+
+--SELECT ProductID, Quantity, UnitPrice, Quantity * UnitPrice AS Revenue
+--FROM OrdersDetails
+
+--SELECT ProductID, SUM(Quantity * UnitPrice) AS TotalRevenue
+--FROM OrdersDetails
+--GROUP BY ProductID
+
+--SELECT Products.ProductName,
+--SUM (OrdersDetails.Quantity * OrdersDetails.UnitPrice) AS TotalRevenue
+--FROM OrdersDetails
+--JOIN Products ON OrdersDetails.ProductID = Products.ProductID
+--GROUP BY Products.ProductName
+--ORDER BY TotalRevenue DESC
+
+--SELECT Products.ProductName,
+--SUM (OrdersDetails.Quantity * OrdersDetails.UnitPrice) AS TotalRevenue
+--FROM OrdersDetails
+--JOIN Products ON OrdersDetails.ProductID = Products.ProductID
+--GROUP BY Products.ProductName
+--HAVING SUM(OrdersDetails.Quantity * OrdersDetails.UnitPrice)> 50
+--ORDER BY TotalRevenue DESC
+
+--SELECT TOP 5 ProductName, Price
+--FROM Products
+--ORDER BY Price DESC
+
+--SELECT DISTINCT ProductID
+--FROM OrdersDetails
+
+--SELECT *
+--FROM OrdersDetails
+--WHERE ProductSizeID is NULL
+
+--SELECT *
+--FROM OrdersDetails
+--WHERE ProductSizeID is not NULL
+
+--SELECT
+--ProductName, Price,
+--CASE 
+--WHEN Price >= 40 THEN 'High Price'
+--ELSE 'Standard Price'
+--END AS PriceCategory
+--FROM Products
 
